@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pimiento & Olivos Restaurante | Portafolio Navideño 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display, Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burgundy: {
+                            50: '#fdf2f3',
+                            100: '#fbe5e7',
+                            600: '#9b222c',
+                            700: '#7C1D26',
+                            800: '#63151d',
+                            900: '#4a0e14',
+                        },
+                        olive: {
+                            50: '#f4f7f3',
+                            100: '#e4ebe2',
+                            600: '#4d7043',
+                            700: '#3D5A35',
+                            800: '#2f4629',
+                            900: '#23341f',
+                        },
+                        gold: {
+                            100: '#fbf5e0',
+                            300: '#ead182',
+                            400: '#dfc05c',
+                            500: '#D4AF37',
+                            600: '#b89225',
+                            700: '#93711a',
+                        },
+                        cream: {
+                            50: '#FDFBF8',
+                            100: '#FAF6F0',
+                            200: '#F2EAE0',
+                            300: '#E5D8C8',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'luxury': '0 20px 40px -15px rgba(124, 29, 38, 0.12)',
+                        'gold-glow': '0 8px 25px -5px rgba(212, 175, 55, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF6F0;
+            color: #2A1E1E;
+            overflow-x: hidden;
+        }
+        /* Subtle festive pattern overlay */
+        .bg-festive-pattern {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.16) 1px, transparent 1px), radial-gradient(rgba(124, 29, 38, 0.08) 1px, #FAF6F0 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, transparent, #D4AF37, transparent) 1;
+        }
+        .card-hover {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF6F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7C1D26;
+            border-radius: 4px;
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-burgundy-700 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-burgundy-900 text-gold-300 text-xs sm:text-sm py-2.5 px-4 border-b border-gold-500/30 no-print">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-star text-gold-500 animate-pulse"></i>
+                <span><strong>Portafolio Oficial Navideño 2026</strong> · Cantidades limitadas · Reserve su pedido con anticipación</span>
+            </div>
+            <div class="flex items-center gap-4 font-medium text-cream-100">
+                <a href="https://wa.me/573213009776" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> 321 300 97 76
+                </a>
+                <span class="text-gold-500/50">|</span>
+                <a href="https://wa.me/573103127537" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> 310 312 75 37
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md border-b border-gold-500/25 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-burgundy-700 border-2 border-gold-500 flex items-center justify-center text-gold-400 shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-utensils text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold text-burgundy-800 tracking-tight block leading-none">
+                        Pimiento <span class="text-olive-700">&amp;</span> Olivos
+                    </span>
+                    <span class="text-[11px] uppercase tracking-[0.22em] text-olive-700 font-semibold block mt-1">
+                        Restaurante · Tradición Familiar
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-700">
+                <a href="#inicio" class="hover:text-burgundy-700 transition">Inicio</a>
+                <a href="#menu-navidad" class="hover:text-burgundy-700 transition">Menú Navideño 2026</a>
+                <a href="#servicios" class="hover:text-burgundy-700 transition">Servicios</a>
+                <a href="#calculadora" class="hover:text-burgundy-700 transition">Calculadora de Porciones</a>
+                <a href="#cotizador" class="hover:text-burgundy-700 transition">Hacer Pedido</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center gap-2.5">
+                <button onclick="openShareModal()" title="Compartir Portafolio con Clientes" class="p-2.5 rounded-full bg-cream-200 hover:bg-gold-100 text-burgundy-800 border border-gold-500/30 transition flex items-center gap-2 text-xs sm:text-sm font-semibold px-3.5">
+                    <i class="fa-solid fa-share-nodes text-burgundy-700"></i>
+                    <span class="hidden sm:inline">Compartir</span>
+                </button>
+
+                <button onclick="scrollToCotizador()" class="relative bg-burgundy-700 hover:bg-burgundy-800 text-white px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold shadow-md transition flex items-center gap-2 border border-gold-400/40">
+                    <i class="fa-solid fa-basket-shopping text-gold-400"></i>
+                    <span>Mi Pedido</span>
+                    <span id="nav-cart-badge" class="bg-gold-500 text-burgundy-900 font-bold text-xs px-2 py-0.5 rounded-full">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-burgundy-900 text-cream-50 overflow-hidden">
+        <!-- Decorative Background Image with Rich Gradient -->
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Mesa Navideña Pimiento y Olivos" 
+                 class="w-full h-full object-cover object-center"
+                 onerror="this.src='https://placehold.co/1920x1080/4a0e14/D4AF37?text=Pimiento+%26+Olivos+2026'">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-burgundy-900 via-burgundy-900/90 to-burgundy-800/75"></div>
+
+        <!-- Decorative Gold Corner Accents -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Brand Story & CTA -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-400/50 text-gold-300 text-xs sm:text-sm font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-holly-berry text-gold-400"></i>
+                        Temporada de Navidad y Fin de Año 2026
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+                        El Sabor Artesanal que Une a la <span class="text-gold-400 italic font-display font-normal">Familia</span> en Navidad
+                    </h1>
+
+                    <blockquote class="text-lg sm:text-xl text-cream-200 font-display italic border-l-4 border-gold-500 pl-4 py-1 max-w-2xl mx-auto lg:mx-0">
+                        “Deliciosas recetas caseras, recién hechas, con el amor y la experiencia de nuestras manos artesanas.”
+                    </blockquote>
+
+                    <p class="text-sm sm:text-base text-cream-200/90 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        En <strong>Pimiento &amp; Olivos Restaurante</strong> preparamos cada plato como en casa para tus Novenas de Aguinaldos, Cenas de Nochebuena, Año Nuevo y celebraciones empresariales de este 2026.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#menu-navidad" class="w-full sm:w-auto px-7 py-4 rounded-full bg-gold-500 hover:bg-gold-400 text-burgundy-900 font-bold text-base shadow-gold-glow transition flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-book-open"></i>
+                            Ver Menú Navideño 2026
+                        </a>
+                        <a href="#cotizador" class="w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border border-gold-400/50 font-semibold text-base transition flex items-center justify-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-lg"></i>
+                            Armar Cotización y Reservar
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/15 text-left max-w-lg mx-auto lg:mx-0">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-full bg-olive-700/80 border border-gold-400/40 flex items-center justify-center text-gold-300 shrink-0">
+                                <i class="fa-solid fa-heart text-sm"></i>
+                            </div>
+                            <span class="text-xs text-cream-100 leading-snug"><strong>100% Casero</strong><br>Manos artesanas</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-full bg-olive-700/80 border border-gold-400/40 flex items-center justify-center text-gold-300 shrink-0">
+                                <i class="fa-solid fa-fire-burner text-sm"></i>
+                            </div>
+                            <span class="text-xs text-cream-100 leading-snug"><strong>Recién Hecho</strong><br>Ingredientes frescos</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-9 h-9 rounded-full bg-olive-700/80 border border-gold-400/40 flex items-center justify-center text-gold-300 shrink-0">
+                                <i class="fa-solid fa-calendar-check text-sm"></i>
+                            </div>
+                            <span class="text-xs text-cream-100 leading-snug"><strong>Agenda 2026</strong><br>Cupos limitados</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Featured Christmas Emblem Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative bg-cream-100 text-stone-800 rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-gold-500 max-w-md mx-auto">
+                        <!-- Floating Badge -->
+                        <div class="absolute -top-4 right-6 bg-olive-700 text-gold-300 text-xs uppercase font-bold tracking-widest px-4 py-1.5 rounded-full border border-gold-400 shadow-md">
+                            Edición Especial 2026
+                        </div>
+
+                        <div class="text-center border-b border-stone-200 pb-5">
+                            <p class="text-xs uppercase tracking-[0.25em] text-olive-700 font-bold">Portafolio Gastronómico</p>
+                            <h2 class="font-serif text-3xl font-bold text-burgundy-800 mt-1">Pimiento &amp; Olivos</h2>
+                            <p class="text-xs text-stone-500 mt-1">Especialistas en Cenas Navideñas, Carnes Rellenas y Novenas</p>
+                        </div>
+
+                        <!-- Featured Dish Mini Preview -->
+                        <div class="my-5 relative rounded-2xl overflow-hidden group border border-gold-500/40">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=900&q=80" 
+                                 alt="Cena Navideña Especial" 
+                                 class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/7C1D26/FAF6F0?text=Cena+Navidad+2026'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
+                                <span class="text-[11px] uppercase tracking-wider bg-gold-500 text-burgundy-900 font-bold px-2.5 py-0.5 rounded-full w-fit mb-1">Plato Estrella</span>
+                                <p class="font-serif text-lg font-bold">Cena Navidad y Año Nuevo</p>
+                                <p class="text-xs text-cream-200">Desde $42.000 / Unidad · Lista para servir</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct WhatsApp Contact Box -->
+                        <div class="bg-burgundy-50 rounded-2xl p-4 border border-burgundy-100 space-y-2.5">
+                            <p class="text-xs font-bold uppercase tracking-wider text-burgundy-800 text-center">
+                                <i class="fa-solid fa-phone-volume mr-1 text-burgundy-700"></i> Líneas Directas de Atención y Reservas
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                <a href="https://wa.me/573213009776?text=Hola%20Pimiento%20%26%20Olivos%2C%20deseo%20informaci%C3%B3n%20del%20Portafolio%20Navide%C3%B1o%202026" target="_blank" rel="noopener noreferrer"
+                                   class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-olive-700 hover:bg-olive-800 text-white font-semibold text-xs shadow transition">
+                                    <i class="fa-brands fa-whatsapp text-base text-gold-300"></i>
+                                    321 300 97 76
+                                </a>
+                                <a href="https://wa.me/573103127537?text=Hola%20Pimiento%20%26%20Olivos%2C%20deseo%20informaci%C3%B3n%20del%20Portafolio%20Navide%C3%B1o%202026" target="_blank" rel="noopener noreferrer"
+                                   class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-burgundy-700 hover:bg-burgundy-800 text-white font-semibold text-xs shadow transition">
+                                    <i class="fa-brands fa-whatsapp text-base text-gold-300"></i>
+                                    310 312 75 37
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Essence / Value Proposition Banner -->
+    <section class="py-12 bg-cream-200/70 border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white/90 p-6 rounded-2xl border border-gold-500/30 shadow-sm flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-burgundy-700 text-gold-400 flex items-center justify-center shrink-0 text-xl shadow">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-bold text-lg text-burgundy-800">Tradición Familiar</h3>
+                        <p class="text-sm text-stone-600 mt-1">Cada carne rellena, tamal, natilla y cena es elaborada artesanalmente en nuestra cocina familiar con recetas probadas por años.</p>
+                    </div>
+                </div>
+                <div class="bg-white/90 p-6 rounded-2xl border border-gold-500/30 shadow-sm flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-olive-700 text-gold-300 flex items-center justify-center shrink-0 text-xl shadow">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-bold text-lg text-burgundy-800">Calidad y Puntualidad</h3>
+                        <p class="text-sm text-stone-600 mt-1">Trabajamos bajo pedido con cantidades limitadas para garantizarte frescura absoluta y entrega puntual en tus fechas especiales.</p>
+                    </div>
+                </div>
+                <div class="bg-white/90 p-6 rounded-2xl border border-gold-500/30 shadow-sm flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-500 text-burgundy-900 flex items-center justify-center shrink-0 text-xl shadow">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-bold text-lg text-burgundy-800">Listo para Disfrutar</h3>
+                        <p class="text-sm text-stone-600 mt-1">Olvídate de pasar horas en la cocina en Nochebuena o Fin de Año; nosotros cocinamos por ti para que disfrutes a tus invitados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Catalog Section: Menú Navideño 2026 -->
+    <section id="menu-navidad" class="py-16 sm:py-20 bg-festive-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-olive-700 bg-olive-100 px-3.5 py-1.5 rounded-full border border-olive-600/20">
+                    Catálogo Oficial 2026
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-burgundy-800 mt-3">
+                    Nuestro Menú Navideño 2026
+                </h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto my-4 rounded-full"></div>
+                <p class="text-stone-600 text-sm sm:text-base">
+                    Selecciona las especialidades que deseas para tu celebración. Puedes agregarlas a tu <strong>Cotizador Navideño</strong> con un clic y enviarnos tu pedido directo por WhatsApp.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10 no-print" id="category-tabs">
+                <button onclick="filterCategory('Todos')" data-cat="Todos" class="cat-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition shadow-sm bg-burgundy-700 text-white border border-gold-400">
+                    <i class="fa-solid fa-border-all mr-1.5"></i> Todos los Platos (12)
+                </button>
+                <button onclick="filterCategory('Cenas Servidas')" data-cat="Cenas Servidas" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-stone-700 hover:bg-burgundy-50 border border-stone-200">
+                    <i class="fa-solid fa-plate-wheat mr-1.5 text-burgundy-700"></i> Cenas Servidas
+                </button>
+                <button onclick="filterCategory('Especialidades y Carnes')" data-cat="Especialidades y Carnes" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-stone-700 hover:bg-burgundy-50 border border-stone-200">
+                    <i class="fa-solid fa-drumstick-bite mr-1.5 text-burgundy-700"></i> Especialidades y Carnes
+                </button>
+                <button onclick="filterCategory('Tradición Navideña y Pasabocas')" data-cat="Tradición Navideña y Pasabocas" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-stone-700 hover:bg-burgundy-50 border border-stone-200">
+                    <i class="fa-solid fa-bell-concierge mr-1.5 text-olive-700"></i> Tradición y Novenas
+                </button>
+                <button onclick="filterCategory('Postres')" data-cat="Postres" class="cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-stone-700 hover:bg-burgundy-50 border border-stone-200">
+                    <i class="fa-solid fa-Stroopwafel fa-cookie-bite mr-1.5 text-gold-600"></i> Postres Navideños
+                </button>
+            </div>
+
+            <!-- Product Grid Container -->
+            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Populated dynamically via JavaScript -->
+            </div>
+
+            <!-- Important Reservation Notice Banner -->
+            <div class="mt-12 bg-burgundy-900 text-cream-100 rounded-3xl p-6 sm:p-8 border-2 border-gold-500/60 shadow-luxury flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-500 text-burgundy-900 flex items-center justify-center shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-gold-400">Notas Importantes para tus Pedidos 2026</h3>
+                        <ul class="mt-2 space-y-1 text-xs sm:text-sm text-cream-200">
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i><strong>Cantidades Limitadas:</strong> Elaboramos todo de forma artesanal; agenda tu pedido antes de que se agoten los cupos.</li>
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i><strong>Carnes por Libra:</strong> Cada libra rinde aproximadamente entre 3 y 4 porciones generosas.</li>
+                            <li><i class="fa-solid fa-check text-gold-400 mr-2"></i><strong>Imágenes de referencia:</strong> Presentación tradicional sujeta al tamaño de tu pedido.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shrink-0 w-full lg:w-auto">
+                    <button onclick="scrollToCotizador()" class="w-full lg:w-auto px-7 py-4 rounded-full bg-gold-500 hover:bg-gold-400 text-burgundy-900 font-bold text-sm shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        Ir a Mi Cotización Navideña
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section: Nuestros Servicios 2026 -->
+    <section id="servicios" class="py-16 sm:py-20 bg-olive-900 text-cream-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-400 bg-white/10 px-4 py-1.5 rounded-full border border-gold-400/30">
+                    Soluciones Gastronómicas Integrales
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-3">
+                    Nuestros Servicios para 2026
+                </h2>
+                <p class="text-cream-200/85 text-sm sm:text-base mt-3">
+                    En <strong>Pimiento &amp; Olivos</strong> acompañamos tanto las mesas familiares como los eventos corporativos de fin de año con atención cálida, ética y profesional.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                <!-- Service 1 -->
+                <div class="bg-white/10 backdrop-blur-sm border border-gold-500/30 rounded-3xl p-7 hover:border-gold-400 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-14 h-14 rounded-2xl bg-burgundy-700 border border-gold-400 text-gold-300 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-champagne-glasses"></i>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-300 bg-black/25 px-3 py-1 rounded-full">24 y 31 de Diciembre</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-gold-400">1. Cenas de Navidad y Año Nuevo</h3>
+                        <p class="text-sm text-cream-100/90 mt-2 leading-relaxed">
+                            Opciones flexibles para tu hogar: pide nuestros <strong>Platos Navideños Completos</strong> listos para servir a cada invitado, o arma tu centro de mesa con nuestras <strong>Carnes Especiales por Libra</strong> (Muchacho relleno, Pernil de cerdo, Pechugas rellenas o Pavo entero al horno).
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-gold-300">
+                        <span><i class="fa-solid fa-utensils mr-1.5"></i> Recetas caseras recién horneadas</span>
+                        <a href="#menu-navidad" onclick="filterCategory('Cenas Servidas')" class="underline font-bold hover:text-white">Ver opciones →</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white/10 backdrop-blur-sm border border-gold-500/30 rounded-3xl p-7 hover:border-gold-400 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-14 h-14 rounded-2xl bg-gold-500 text-burgundy-900 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-star-and-crescent fa-bell"></i>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-300 bg-black/25 px-3 py-1 rounded-full">16 al 24 de Diciembre</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-gold-400">2. Refrigerios y Pasabocas para Novenas</h3>
+                        <p class="text-sm text-cream-100/90 mt-2 leading-relaxed">
+                            Haz que cada noche de novena sea inolvidable sin complicarte: ofrecemos <strong>Bandejas festivas de Flautas Mixtas</strong>, <strong>Panes Rellenitos de Pollo y Queso</strong>, <strong>Tamales</strong>, <strong>Hayacas</strong>, <strong>Envueltos</strong> y moldes de <strong>Natilla con Dulce de Mora</strong>.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-gold-300">
+                        <span><i class="fa-solid fa-users mr-1.5"></i> Para familias, conjuntos y oficinas</span>
+                        <a href="#menu-navidad" onclick="filterCategory('Tradición Navideña y Pasabocas')" class="underline font-bold hover:text-white">Ver pasabocas →</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white/10 backdrop-blur-sm border border-gold-500/30 rounded-3xl p-7 hover:border-gold-400 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-14 h-14 rounded-2xl bg-olive-700 border border-gold-400 text-gold-300 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-300 bg-black/25 px-3 py-1 rounded-full">Empresas y Familias</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-gold-400">3. Eventos Familiares y Corporativos</h3>
+                        <p class="text-sm text-cream-100/90 mt-2 leading-relaxed">
+                            Atendemos despedidas de fin de año empresariales, almuerzos navideños de equipos de trabajo, grados, aniversarios y reuniones familiares durante todo el 2026 con puntualidad, presentación impecable y sazón artesanal.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-gold-300">
+                        <span><i class="fa-solid fa-file-invoice mr-1.5"></i> Cotizaciones a medida para grupos</span>
+                        <a href="#cotizador" class="underline font-bold hover:text-white">Cotizar evento →</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white/10 backdrop-blur-sm border border-gold-500/30 rounded-3xl p-7 hover:border-gold-400 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-14 h-14 rounded-2xl bg-burgundy-700 border border-gold-400 text-gold-300 flex items-center justify-center text-2xl shadow-md">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-gold-300 bg-black/25 px-3 py-1 rounded-full">Asesoría Sin Costo</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-gold-400">4. Asesoría Personalizada de Porciones</h3>
+                        <p class="text-sm text-cream-100/90 mt-2 leading-relaxed">
+                            ¿No sabes cuántas libras de carne o cuántos pasabocas pedir para tus invitados? Te asesoramos personalmente o puedes usar nuestra calculadora interactiva para pedir la cantidad justa y optimizar tu presupuesto.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-gold-300">
+                        <span><i class="fa-solid fa-calculator mr-1.5"></i> Cálculo exacto según tus invitados</span>
+                        <a href="#calculadora" class="underline font-bold hover:text-white">Usar calculadora →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Portion Calculator Helper -->
+    <section id="calculadora" class="py-14 bg-cream-200/80 border-b border-gold-500/30 no-print">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-luxury border border-gold-500/40">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6 space-y-3">
+                        <span class="text-xs font-bold uppercase tracking-widest text-burgundy-700 bg-burgundy-50 px-3 py-1 rounded-full">
+                            <i class="fa-solid fa-wand-sparkles mr-1"></i> Herramienta Interactiva
+                        </span>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-burgundy-800">
+                            Calculadora de Porciones Navideñas
+                        </h3>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Ingresa el número de invitados de tu reunión o cena y te sugerimos al instante las cantidades ideales de nuestro menú para que todos queden encantados.
+                        </p>
+
+                        <div class="pt-3">
+                            <label for="guest-count" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">
+                                ¿Cuántas personas asistirán a tu celebración?
+                            </label>
+                            <div class="flex items-center gap-3">
+                                <button onclick="adjustGuests(-2)" class="w-11 h-11 rounded-xl bg-cream-200 hover:bg-burgundy-700 hover:text-white font-bold text-lg transition">-</button>
+                                <input id="guest-count" type="number" min="2" max="500" value="12" oninput="updatePortionCalculator()"
+                                       class="w-28 text-center font-serif font-bold text-2xl py-2 rounded-xl border-2 border-gold-500 text-burgundy-800 focus:outline-none">
+                                <button onclick="adjustGuests(2)" class="w-11 h-11 rounded-xl bg-cream-200 hover:bg-burgundy-700 hover:text-white font-bold text-lg transition">+</button>
+                                <span class="text-sm font-semibold text-stone-600">Invitados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 bg-cream-100 rounded-2xl p-5 sm:p-6 border border-gold-500/40 space-y-4">
+                        <h4 class="font-serif font-bold text-lg text-burgundy-800 border-b border-stone-200 pb-2">
+                            Sugerencia de Pimiento &amp; Olivos para <span id="calc-guests-label" class="text-olive-700 underline">12 personas</span>:
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-200/80">
+                                <span class="text-stone-500 block text-xs">Opción A: Carnes por Libra</span>
+                                <strong id="calc-libras" class="text-base text-burgundy-800 font-bold">3 a 4 Libras</strong>
+                                <span class="block text-[11px] text-stone-500 mt-0.5">Muchacho, Pernil o Pechuga Rellena</span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-200/80">
+                                <span class="text-stone-500 block text-xs">Opción B: Cenas Servidas</span>
+                                <strong id="calc-cenas" class="text-base text-burgundy-800 font-bold">12 Platos Completos</strong>
+                                <span class="block text-[11px] text-stone-500 mt-0.5">Cena Navidad y Año Nuevo</span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-200/80">
+                                <span class="text-stone-500 block text-xs">Postre Tradicional</span>
+                                <strong id="calc-natilla" class="text-base text-olive-800 font-bold">1 Molde</strong>
+                                <span class="block text-[11px] text-stone-500 mt-0.5">Natilla y Dulce de Mora</span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-stone-200/80">
+                                <span class="text-stone-500 block text-xs">Acompañamiento / Novena</span>
+                                <strong id="calc-pasabocas" class="text-base text-olive-800 font-bold">12 Unidades</strong>
+                                <span class="block text-[11px] text-stone-500 mt-0.5">Envueltos, Panes Rellenos o Hayacas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Order Builder / Cotizador Navideño 2026 -->
+    <section id="cotizador" class="py-16 sm:py-20 bg-cream-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-burgundy-700 bg-burgundy-100 px-3.5 py-1.5 rounded-full">
+                    Reserva Rápida por WhatsApp
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-burgundy-800 mt-3">
+                    Cotizador y Pedido Navideño 2026
+                </h2>
+                <p class="text-stone-600 text-sm sm:text-base mt-2">
+                    Revisa los productos seleccionados, ajusta las cantidades y envíanos tu solicitud directamente a cualquiera de nuestras dos líneas de WhatsApp para confirmar disponibilidad.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Column: Selected Items List -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-luxury border border-gold-500/30">
+                    <div class="flex items-center justify-between border-b border-stone-200 pb-4 mb-5">
+                        <div class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-utensils text-burgundy-700 text-lg"></i>
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-burgundy-800">Platos en tu Cotización</h3>
+                        </div>
+                        <button onclick="clearCart()" id="clear-cart-btn" class="text-xs text-stone-500 hover:text-red-700 font-semibold transition hidden">
+                            <i class="fa-solid fa-trash-can mr-1"></i> Vaciar lista
+                        </button>
+                    </div>
+
+                    <!-- Dynamic Cart Items Container -->
+                    <div id="cart-items-container" class="space-y-4">
+                        <!-- Rendered via JS -->
+                    </div>
+
+                    <!-- Quick Add Pills for Convenience -->
+                    <div class="mt-6 pt-5 border-t border-stone-200/80">
+                        <p class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">
+                            <i class="fa-solid fa-plus-circle text-olive-700 mr-1"></i> Agregar rápido a tu pedido:
+                        </p>
+                        <div id="quick-add-pills" class="flex flex-wrap gap-2">
+                            <!-- Populated via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Customer Details & Direct WhatsApp Send -->
+                <div class="lg:col-span-5 bg-burgundy-900 text-cream-50 rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-gold-500 sticky top-24">
+                    <h3 class="font-serif text-2xl font-bold text-gold-400 border-b border-white/15 pb-3">
+                        Resumen de tu Reserva 2026
+                    </h3>
+
+                    <div class="space-y-4 my-5 text-sm">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-1">
+                                Tu Nombre o Empresa *
+                            </label>
+                            <input type="text" id="cust-name" placeholder="Ej. Familia Rodríguez / Empresa ABC"
+                                   class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-gold-400/40 text-white placeholder-cream-300/50 focus:outline-none focus:border-gold-400">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-1">
+                                    Fecha Especial *
+                                </label>
+                                <select id="cust-date" class="w-full px-3.5 py-2.5 rounded-xl bg-burgundy-800 border border-gold-400/40 text-white focus:outline-none focus:border-gold-400">
+                                    <option value="Novenas de Aguinaldos (16 al 23 Dic 2026)">Novenas (16 - 23 Dic)</option>
+                                    <option value="Cena de Navidad (24 Dic 2026)" selected>Cena Navidad (24 Dic)</option>
+                                    <option value="Cena de Año Nuevo (31 Dic 2026)">Cena Año Nuevo (31 Dic)</option>
+                                    <option value="Evento Corporativo / Familiar 2026">Evento Empresarial / Familiar</option>
+                                    <option value="Otra fecha de Diciembre 2026">Otra fecha especial</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-1">
+                                    Modalidad
+                                </label>
+                                <select id="cust-delivery" class="w-full px-3.5 py-2.5 rounded-xl bg-burgundy-800 border border-gold-400/40 text-white focus:outline-none focus:border-gold-400">
+                                    <option value="Recoger en Pimiento & Olivos">Recoger en el Restaurante</option>
+                                    <option value="Consultar Domicilio">Consultar Domicilio</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-300 font-semibold mb-1">
+                                Observaciones o Detalles Adicionales
+                            </label>
+                            <textarea id="cust-notes" rows="2" placeholder="Ej. Hora aproximada, dudas sobre porciones o salsas..."
+                                      class="w-full px-4 py-2 rounded-xl bg-white/10 border border-gold-400/40 text-white placeholder-cream-300/50 focus:outline-none focus:border-gold-400"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Total Box -->
+                    <div class="bg-black/30 rounded-2xl p-4 border border-gold-500/40 mb-6">
+                        <div class="flex items-center justify-between text-xs text-cream-200 mb-1">
+                            <span>Total de productos seleccionados:</span>
+                            <span id="summary-count" class="font-bold">0 ítems</span>
+                        </div>
+                        <div class="flex items-baseline justify-between pt-2 border-t border-white/10">
+                            <span class="text-sm font-semibold text-gold-300">Valor Estimado:</span>
+                            <span id="summary-total" class="font-serif text-3xl font-bold text-gold-400">$0</span>
+                        </div>
+                        <p class="text-[11px] text-cream-200/75 mt-1.5">
+                            * Valores sujetos a confirmación de peso final o tamaño al momento de reservar.
+                        </p>
+                    </div>
+
+                    <!-- WhatsApp Send Buttons (Both Official Numbers) -->
+                    <div class="space-y-3">
+                        <p class="text-xs text-center font-bold uppercase tracking-wider text-gold-300">
+                            Enviar pedido por WhatsApp a:
+                        </p>
+                        <button onclick="sendOrderWhatsApp('573213009776')" class="w-full py-3.5 px-5 rounded-full bg-green-600 hover:bg-green-500 text-white font-bold text-sm shadow-lg transition flex items-center justify-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Línea 1: 321 300 97 76 (Enviar Pedido)</span>
+                        </button>
+                        <button onclick="sendOrderWhatsApp('573103127537')" class="w-full py-3.5 px-5 rounded-full bg-olive-700 hover:bg-olive-600 text-white border border-gold-400/50 font-bold text-sm shadow-lg transition flex items-center justify-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-xl text-gold-300"></i>
+                            <span>Línea 2: 310 312 75 37 (Enviar Pedido)</span>
+                        </button>
+                        <button onclick="copyOrderText()" class="w-full py-2.5 px-4 rounded-full bg-white/10 hover:bg-white/20 text-cream-100 text-xs font-semibold transition flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-copy text-gold-400"></i>
+                            <span>Copiar resumen del pedido al portapapeles</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-burgundy-900 text-cream-200 border-t-4 border-gold-500 pt-14 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-white/15">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gold-500 text-burgundy-900 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-2xl font-bold text-white">Pimiento &amp; Olivos</h4>
+                            <p class="text-xs uppercase tracking-widest text-gold-400">Restaurante · Portafolio 2026</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-cream-200/85 italic font-display text-lg">
+                        “Deliciosas recetas caseras, recién hechas, con el amor y la experiencia de nuestras manos artesanas.”
+                    </p>
+                    <p class="text-xs text-cream-300/70">
+                        Gracias por permitir que nuestra familia sea parte de tu mesa en esta Navidad y Fin de Año 2026.
+                    </p>
+                </div>
+
+                <!-- Quick Menu Links -->
+                <div class="md:col-span-3 space-y-2.5 text-sm">
+                    <h5 class="font-serif font-bold text-lg text-gold-400 mb-3">Especialidades 2026</h5>
+                    <ul class="space-y-2 text-xs sm:text-sm text-cream-200/90">
+                        <li><a href="#menu-navidad" onclick="filterCategory('Cenas Servidas')" class="hover:text-gold-400 transition">• Cena Navidad y Año Nuevo</a></li>
+                        <li><a href="#menu-navidad" onclick="filterCategory('Especialidades y Carnes')" class="hover:text-gold-400 transition">• Pavo al Horno y Pernil de Cerdo</a></li>
+                        <li><a href="#menu-navidad" onclick="filterCategory('Especialidades y Carnes')" class="hover:text-gold-400 transition">• Muchacho y Pechugas Rellenas</a></li>
+                        <li><a href="#menu-navidad" onclick="filterCategory('Tradición Navideña y Pasabocas')" class="hover:text-gold-400 transition">• Bandejas de Flautas y Panes Rellenos</a></li>
+                        <li><a href="#menu-navidad" onclick="filterCategory('Tradición Navideña y Pasabocas')" class="hover:text-gold-400 transition">• Tamales, Hayacas y Envueltos</a></li>
+                        <li><a href="#menu-navidad" onclick="filterCategory('Postres')" class="hover:text-gold-400 transition">• Natilla Casera y Dulce de Mora</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Admin Tools -->
+                <div class="md:col-span-4 space-y-3">
+                    <h5 class="font-serif font-bold text-lg text-gold-400 mb-3">Reservas y Contacto Directo</h5>
+                    <div class="space-y-2 text-sm">
+                        <a href="tel:+573213009776" class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                            <div>
+                                <span class="text-xs text-gold-300 block">Línea Principal de Pedidos</span>
+                                <strong class="text-white text-base">321 300 97 76</strong>
+                            </div>
+                        </a>
+                        <a href="tel:+573103127537" class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition">
+                            <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                            <div>
+                                <span class="text-xs text-gold-300 block">Línea Alterna de Pedidos</span>
+                                <strong class="text-white text-base">310 312 75 37</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Discreet Family Admin Tool -->
+                    <div class="pt-3 flex flex-wrap gap-2 no-print">
+                        <button onclick="openPriceModal()" class="text-xs text-gold-300/80 hover:text-gold-300 underline flex items-center gap-1.5">
+                            <i class="fa-solid fa-sliders"></i> Ajustar Precios 2026 (Modo Familia)
+                        </button>
+                        <span class="text-white/20">|</span>
+                        <button onclick="openShareModal()" class="text-xs text-gold-300/80 hover:text-gold-300 underline flex items-center gap-1.5">
+                            <i class="fa-solid fa-share-from-square"></i> Carta de Texto para WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-cream-300/60 gap-4">
+                <p>© 2026 Pimiento &amp; Olivos Restaurante. Todos los derechos reservados. Hecho con amor familiar.</p>
+                <p>Imágenes de referencia · Cantidades limitadas · Reserve con anticipación</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick Bar on Mobile -->
+    <div class="fixed bottom-4 right-4 z-40 flex flex-col gap-2.5 no-print">
+        <button onclick="scrollToCotizador()" class="bg-burgundy-700 hover:bg-burgundy-800 text-white px-5 py-3.5 rounded-full shadow-2xl border-2 border-gold-400 flex items-center gap-2.5 font-bold text-sm transition transform hover:scale-105">
+            <i class="fa-solid fa-basket-shopping text-gold-400"></i>
+            <span>Ver Pedido</span>
+            <span id="floating-cart-count" class="bg-gold-500 text-burgundy-900 px-2 py-0.5 rounded-full text-xs font-extrabold">0</span>
+        </button>
+    </div>
+
+    <!-- MODAL 1: Shareable Digital Portfolio & WhatsApp Copy -->
+    <div id="share-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 no-print">
+        <div class="bg-cream-50 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-2 border-gold-500 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeShareModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-stone-200 hover:bg-burgundy-700 hover:text-white flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span class="text-xs font-bold uppercase tracking-widest text-olive-700">Herramienta para Compartir con Clientes</span>
+            <h3 class="font-serif text-2xl font-bold text-burgundy-800 mt-1">Carta Digital de Texto 2026</h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1">
+                Copia este resumen ejecutivo de tu portafolio navideño 2026 para enviarlo por WhatsApp a tus clientes junto con el link de esta página web.
+            </p>
+
+            <textarea id="portfolio-share-text" readonly rows="11"
+                      class="w-full mt-4 p-4 rounded-2xl bg-white border border-gold-500/50 text-xs font-mono text-stone-700 focus:outline-none"></textarea>
+
+            <div class="mt-5 flex flex-col sm:flex-row gap-3">
+                <button onclick="copyPortfolioCard()" class="flex-1 py-3 px-5 rounded-full bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold text-xs sm:text-sm shadow transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-copy text-gold-400"></i>
+                    <span>Copiar Carta Navideña 2026</span>
+                </button>
+                <button onclick="closeShareModal()" class="py-3 px-5 rounded-full bg-stone-200 hover:bg-stone-300 text-stone-700 font-semibold text-xs sm:text-sm transition">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Discreet Price Customizer for Family Business -->
+    <div id="price-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 no-print">
+        <div class="bg-cream-50 rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border-2 border-gold-500 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closePriceModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-stone-200 hover:bg-burgundy-700 hover:text-white flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span class="text-xs font-bold uppercase tracking-widest text-burgundy-700">Administración Familiar · Pimiento &amp; Olivos</span>
+            <h3 class="font-serif text-2xl font-bold text-burgundy-800 mt-1">Ajustar Precios del Portafolio 2026</h3>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1">
+                Si deseas actualizar algún precio para la temporada 2026 o aplicar un incremento porcentual rápido, edítalo aquí y el catálogo + cotizador se actualizarán al instante.
+            </p>
+
+            <!-- Quick Percentage Adjustment -->
+            <div class="mt-4 p-3.5 rounded-2xl bg-gold-100/70 border border-gold-500/40 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <span class="font-bold text-burgundy-900"><i class="fa-solid fa-bolt mr-1"></i> Ajuste rápido sobre precios base:</span>
+                <div class="flex flex-wrap gap-1.5">
+                    <button onclick="applyPercentageIncrease(0)" class="px-3 py-1.5 rounded-lg bg-white hover:bg-burgundy-700 hover:text-white font-semibold border border-stone-300 transition">Precios Base PDF</button>
+                    <button onclick="applyPercentageIncrease(5)" class="px-3 py-1.5 rounded-lg bg-white hover:bg-burgundy-700 hover:text-white font-semibold border border-stone-300 transition">+5%</button>
+                    <button onclick="applyPercentageIncrease(10)" class="px-3 py-1.5 rounded-lg bg-white hover:bg-burgundy-700 hover:text-white font-semibold border border-stone-300 transition">+10%</button>
+                </div>
+            </div>
+
+            <div id="price-editor-list" class="mt-4 space-y-2.5 max-h-80 overflow-y-auto pr-1">
+                <!-- Populated by JS -->
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row justify-end gap-3">
+                <button onclick="saveCustomPrices()" class="py-3 px-6 rounded-full bg-olive-700 hover:bg-olive-800 text-white font-bold text-sm shadow transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-floppy-disk"></i> Guardar y Actualizar Catálogo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Toast Notification -->
+    <div id="toast" class="fixed top-24 right-5 z-50 max-w-sm bg-burgundy-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-gold-400 flex items-center gap-3 transform translate-x-[150%] transition-transform duration-300 no-print">
+        <i class="fa-solid fa-circle-check text-gold-400 text-xl"></i>
+        <span id="toast-message" class="text-xs sm:text-sm font-medium">Producto agregado a tu pedido</span>
+    </div>
+
+    <!-- Application Logic -->
+    <script>
+        // Complete Catalog Data from Pimiento & Olivos PDF
+        const initialCatalog = [
+            {
+                id: 'cena-navidad',
+                name: 'Cena Navidad y Año Nuevo',
+                category: 'Cenas Servidas',
+                basePrice: 42000,
+                price: 42000,
+                pricePrefix: 'Desde ',
+                unit: 'Unidad',
+                badge: 'Estrella de la Casa',
+                badgeColor: 'bg-gold-500 text-burgundy-900',
+                description: 'Plato especial navideño completo listo para disfrutar en familia: medallones de pechuga o carne rellena artesanal, arroz festivo dorado, puré cremoso al perejil y ensalada fresca de temporada.',
+                suggestion: '1 plato por invitado',
+                image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'pavo-horno',
+                name: 'Pavo al Horno',
+                category: 'Especialidades y Carnes',
+                basePrice: 280000,
+                price: 280000,
+                pricePrefix: 'Desde ',
+                unit: 'Unidad',
+                badge: 'Bajo Pedido Especial',
+                badgeColor: 'bg-burgundy-700 text-gold-300',
+                description: 'Pavo entero horneado lentamente en sus propios jugos con mantequilla de finas hierbas, toque cítrico de naranja y dorado artesanal perfecto para lucir en el centro de tu mesa navideña.',
+                suggestion: 'Rinde 12 a 18 porciones',
+                image: 'https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'muchacho-relleno',
+                name: 'Muchacho Relleno',
+                category: 'Especialidades y Carnes',
+                basePrice: 32000,
+                price: 32000,
+                pricePrefix: '',
+                unit: 'Libra',
+                badge: 'Tradición Artesanal',
+                badgeColor: 'bg-olive-700 text-white',
+                description: 'Corte selecto de res relleno a mano con vegetales frescos, zanahoria, habichuela, huevo, tocino seleccionado y especias tradicionales, de cocción lenta y sabor casero inigualable.',
+                suggestion: '3 a 4 porciones por libra',
+                image: 'https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'pernil-cerdo',
+                name: 'Pernil de Cerdo',
+                category: 'Especialidades y Carnes',
+                basePrice: 32000,
+                price: 32000,
+                pricePrefix: '',
+                unit: 'Libra',
+                badge: 'Favorito Nochebuena',
+                badgeColor: 'bg-burgundy-700 text-white',
+                description: 'Jugoso pernil de cerdo marinado en adobo tradicional de la casa y horneado lentamente hasta lograr una corteza dorada e irresistible, ideal para Nochebuena y Fin de Año.',
+                suggestion: '3 a 4 porciones por libra',
+                image: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'pechuga-carnes',
+                name: 'Pechuga Rellena de Carnes',
+                category: 'Especialidades y Carnes',
+                basePrice: 32000,
+                price: 32000,
+                pricePrefix: '',
+                unit: 'Libra',
+                badge: 'Receta de la Casa',
+                badgeColor: 'bg-olive-700 text-white',
+                description: 'Suprema de pollo deshuesada y rellena de una exquisita selección de carnes sazonadas al estilo artesanal de Pimiento & Olivos, horneada al punto exacto de jugosidad.',
+                suggestion: '3 a 4 medallones por libra',
+                image: 'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'pechuga-jamon-queso',
+                name: 'Pechuga Rellena de Jamón y Queso',
+                category: 'Especialidades y Carnes',
+                basePrice: 32000,
+                price: 32000,
+                pricePrefix: '',
+                unit: 'Libra',
+                badge: 'Suave y Jugosa',
+                badgeColor: 'bg-gold-500 text-burgundy-900',
+                description: 'Delicado rollo de pechuga relleno con capas de jamón seleccionado y queso fundido, horneado suavemente y listo para cortar en medallones.',
+                suggestion: '3 a 4 medallones por libra',
+                image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'flautas-mixtas',
+                name: 'Flautas Mixtas (Carne y Pollo)',
+                category: 'Tradición Navideña y Pasabocas',
+                basePrice: 90000,
+                price: 90000,
+                pricePrefix: '',
+                unit: 'Bandeja',
+                badge: 'Ideal para Novenas',
+                badgeColor: 'bg-gold-500 text-burgundy-900',
+                description: 'Bandeja festiva de flautas crujientes rellenas de carne y pollo sazonado, bellamente decorada con arte frutal y vegetales frescos para recepciones, novenas y reuniones.',
+                suggestion: 'Bandeja lista para compartir',
+                image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'pan-rellenito',
+                name: 'Pan Rellenito de Pollo y Queso',
+                category: 'Tradición Navideña y Pasabocas',
+                basePrice: 9000,
+                price: 9000,
+                pricePrefix: '',
+                unit: 'Unidad',
+                badge: 'Especial Novenas',
+                badgeColor: 'bg-olive-700 text-white',
+                description: 'Pan artesanal redondo, suave y dorado, generosamente relleno de pollo desmechado en salsa casera cremosa, huevo cocido y lonja de queso.',
+                suggestion: '1 unidad por persona',
+                image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'tamales',
+                name: 'Tamales Artesanales',
+                category: 'Tradición Navideña y Pasabocas',
+                basePrice: 8000,
+                price: 8000,
+                pricePrefix: '',
+                unit: 'Unidad',
+                badge: 'Sabor Casero',
+                badgeColor: 'bg-burgundy-700 text-white',
+                description: 'Tamal tradicional envuelto en hoja de plátano, preparado con masa suave de maíz, carnes seleccionadas, verduras y el auténtico sazón familiar.',
+                suggestion: 'Ideal para desayunos y cenas',
+                image: 'https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'hayacas',
+                name: 'Hayacas Navideñas',
+                category: 'Tradición Navideña y Pasabocas',
+                basePrice: 4500,
+                price: 4500,
+                pricePrefix: '',
+                unit: 'Unidad',
+                badge: 'Tradición',
+                badgeColor: 'bg-olive-700 text-white',
+                description: 'Deliciosas hayacas artesanales envueltas en hoja, con guiso casero tradicional y masa tierna, perfectas para novenas y reuniones de diciembre.',
+                suggestion: '1 a 2 unidades por persona',
+                image: 'https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'envueltos',
+                name: 'Envueltos de Mazorca',
+                category: 'Tradición Navideña y Pasabocas',
+                basePrice: 2500,
+                price: 2500,
+                pricePrefix: '',
+                unit: 'Unidad',
+                badge: 'Acompañante Ideal',
+                badgeColor: 'bg-gold-500 text-burgundy-900',
+                description: 'Envueltos de mazorca frescos, tiernos y ligeramente dulces, cocinados en su hoja natural como el acompañamiento perfecto para nuestras carnes navideñas.',
+                suggestion: '1 a 2 unidades por persona',
+                image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+                id: 'natilla-mora',
+                name: 'Natilla y Dulce de Mora',
+                category: 'Postres',
+                basePrice: 28000,
+                price: 28000,
+                pricePrefix: '',
+                unit: 'Molde',
+                badge: 'Tradición Navideña',
+                badgeColor: 'bg-burgundy-700 text-gold-300',
+                description: 'Tradicional natilla casera de textura firme y cremosa con uvas pasas y toque de canela, acompañada de nuestro dulce artesanal de mora brillante.',
+                suggestion: 'Rinde 8 a 10 porciones por molde',
+                image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80'
+            }
+        ];
+
+        let catalog = JSON.parse(JSON.stringify(initialCatalog));
+        let cart = {};
+        let currentCategory = 'Todos';
+
+        // Format currency in Colombian Pesos ($32.000)
+        function formatCOP(value) {
+            return '$' + Number(value).toLocaleString('es-CO');
+        }
+
+        // Show non-intrusive toast message
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const msgEl = document.getElementById('toast-message');
+            msgEl.textContent = message;
+            toast.classList.remove('translate-x-[150%]');
+            setTimeout(() => {
+                toast.classList.add('translate-x-[150%]');
+            }, 2600);
+        }
+
+        // Render Product Cards
+        function renderCatalog() {
+            const grid = document.getElementById('products-grid');
+            const filtered = currentCategory === 'Todos'
+                ? catalog
+                : catalog.filter(item => item.category === currentCategory);
+
+            grid.innerHTML = filtered.map(item => {
+                const qtyInCart = cart[item.id] || 0;
+                return `
+                <article class="bg-white rounded-3xl overflow-hidden border border-gold-500/35 shadow-luxury card-hover flex flex-col justify-between">
+                    <div>
+                        <!-- Image Header -->
+                        <div class="relative h-56 overflow-hidden bg-stone-200">
+                            <img src="${item.image}" alt="${item.name}"
+                                 class="w-full h-full object-cover transition duration-700 hover:scale-105"
+                                 onerror="this.src='https://placehold.co/600x400/7C1D26/FAF6F0?text=${encodeURIComponent(item.name)}'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20"></div>
+                            
+                            <!-- Top Badge -->
+                            <div class="absolute top-3.5 left-3.5">
+                                <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow ${item.badgeColor}">
+                                    ${item.badge}
+                                </span>
+                            </div>
+
+                            <!-- Category Tag -->
+                            <div class="absolute top-3.5 right-3.5">
+                                <span class="text-[11px] font-semibold bg-black/50 backdrop-blur-sm text-cream-100 px-2.5 py-1 rounded-full">
+                                    ${item.unit}
+                                </span>
+                            </div>
+
+                            <!-- Price Overlay -->
+                            <div class="absolute bottom-3 left-4 right-4 flex items-baseline justify-between text-white">
+                                <div>
+                                    <span class="text-xs text-gold-300 font-medium">${item.pricePrefix}</span>
+                                    <span class="font-serif text-2xl sm:text-3xl font-bold text-white drop-shadow">${formatCOP(item.price)}</span>
+                                    <span class="text-xs text-cream-200 font-medium">/ ${item.unit}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-6">
+                            <p class="text-[11px] font-bold uppercase tracking-widest text-olive-700 mb-1">${item.category}</p>
+                            <h3 class="font-serif text-xl font-bold text-burgundy-800 leading-snug">${item.name}</h3>
+                            <p class="text-xs sm:text-sm text-stone-600 mt-2 leading-relaxed">${item.description}</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer: Rendimiento & Add to Order -->
+                    <div class="px-6 pb-6 pt-3 border-t border-stone-100 space-y-3">
+                        <div class="flex items-center justify-between text-xs text-stone-500">
+                            <span><i class="fa-solid fa-user-group text-gold-600 mr-1.5"></i>${item.suggestion}</span>
+                            ${qtyInCart > 0 ? `<span class="font-bold text-olive-700 bg-olive-50 px-2.5 py-0.5 rounded-full">En tu pedido: ${qtyInCart}</span>` : ''}
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            ${qtyInCart > 0 ? `
+                                <div class="flex items-center justify-between w-full bg-cream-100 rounded-full p-1 border border-gold-500">
+                                    <button onclick="updateCart('${item.id}', -1)" class="w-9 h-9 rounded-full bg-white hover:bg-burgundy-700 hover:text-white text-burgundy-800 font-bold shadow-sm transition">-</button>
+                                    <span class="font-bold text-sm text-burgundy-900">${qtyInCart} ${item.unit}${qtyInCart > 1 ? 's' : ''}</span>
+                                    <button onclick="updateCart('${item.id}', 1)" class="w-9 h-9 rounded-full bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold shadow-sm transition">+</button>
+                                </div>
+                            ` : `
+                                <button onclick="updateCart('${item.id}', 1)" class="w-full py-3 px-4 rounded-full bg-burgundy-700 hover:bg-burgundy-800 text-white font-bold text-xs sm:text-sm shadow transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-plus text-gold-400"></i>
+                                    <span>Agregar a mi Cotización (${item.unit})</span>
+                                </button>
+                            `}
+                        </div>
+                    </div>
+                </article>
+                `;
+            }).join('');
+        }
+
+        // Filter Products by Category
+        function filterCategory(category) {
+            currentCategory = category;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.getAttribute('data-cat') === category) {
+                    btn.className = 'cat-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition shadow-sm bg-burgundy-700 text-white border border-gold-400';
+                } else {
+                    btn.className = 'cat-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-white text-stone-700 hover:bg-burgundy-50 border border-stone-200';
+                }
+            });
+            renderCatalog();
+        }
+
+        // Update Cart Quantities
+        function updateCart(productId, delta) {
+            const currentQty = cart[productId] || 0;
+            const nextQty = currentQty + delta;
+            const product = catalog.find(p => p.id === productId);
+
+            if (nextQty <= 0) {
+                delete cart[productId];
+                showToast(`${product.name} retirado de tu cotización`);
+            } else {
+                cart[productId] = nextQty;
+                if (delta > 0) {
+                    showToast(`Agregado: ${product.name} (${nextQty} ${product.unit}${nextQty > 1 ? 's' : ''})`);
+                }
+            }
+            renderCatalog();
+            renderCart();
+        }
+
+        function clearCart() {
+            cart = {};
+            renderCatalog();
+            renderCart();
+            showToast('Se vació tu lista de cotización');
+        }
+
+        // Render Cotizador / Order Builder Section
+        function renderCart() {
+            const container = document.getElementById('cart-items-container');
+            const clearBtn = document.getElementById('clear-cart-btn');
+            const navBadge = document.getElementById('nav-cart-badge');
+            const floatBadge = document.getElementById('floating-cart-count');
+            const summaryCount = document.getElementById('summary-count');
+            const summaryTotal = document.getElementById('summary-total');
+            const quickPills = document.getElementById('quick-add-pills');
+
+            const entries = Object.entries(cart);
+            let totalUnits = 0;
+            let totalPrice = 0;
+
+            entries.forEach(([id, qty]) => {
+                const item = catalog.find(p => p.id === id);
+                if (item) {
+                    totalUnits += qty;
+                    totalPrice += item.price * qty;
+                }
+            });
+
+            navBadge.textContent = totalUnits;
+            floatBadge.textContent = totalUnits;
+            summaryCount.textContent = `${totalUnits} unidad(es) / libra(s)`;
+            summaryTotal.textContent = formatCOP(totalPrice);
+
+            if (entries.length === 0) {
+                clearBtn.classList.add('hidden');
+                container.innerHTML = `
+                    <div class="text-center py-10 px-4 bg-cream-50 rounded-2xl border border-dashed border-gold-500/50">
+                        <div class="w-14 h-14 rounded-full bg-burgundy-50 text-burgundy-700 flex items-center justify-center mx-auto mb-3 text-xl">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p class="font-serif text-lg font-bold text-burgundy-800">Aún no has seleccionado productos</p>
+                        <p class="text-xs sm:text-sm text-stone-500 max-w-md mx-auto mt-1">
+                            Haz clic en <strong>"Agregar a mi Cotización"</strong> en cualquier plato del menú o usa los botones rápidos de abajo para armar tu pedido navideño.
+                        </p>
+                    </div>
+                `;
+            } else {
+                clearBtn.classList.remove('hidden');
+                container.innerHTML = entries.map(([id, qty]) => {
+                    const item = catalog.find(p => p.id === id);
+                    const subtotal = item.price * qty;
+                    return `
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-cream-50 border border-stone-200/90">
+                            <div class="flex items-center gap-3.5">
+                                <img src="${item.image}" alt="${item.name}" class="w-14 h-14 rounded-xl object-cover shrink-0 border border-gold-500/30">
+                                <div>
+                                    <h4 class="font-serif font-bold text-burgundy-800 text-base">${item.name}</h4>
+                                    <p class="text-xs text-stone-500">${item.pricePrefix}${formatCOP(item.price)} por ${item.unit}</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between sm:justify-end gap-4 pt-2 sm:pt-0 border-t sm:border-t-0 border-stone-200">
+                                <div class="flex items-center gap-2 bg-white rounded-full px-2 py-1 border border-stone-300">
+                                    <button onclick="updateCart('${item.id}', -1)" class="w-7 h-7 rounded-full hover:bg-stone-200 font-bold text-stone-700">-</button>
+                                    <span class="text-xs font-bold px-1.5">${qty} ${item.unit}${qty > 1 ? 's' : ''}</span>
+                                    <button onclick="updateCart('${item.id}', 1)" class="w-7 h-7 rounded-full bg-burgundy-700 text-white font-bold">+</button>
+                                </div>
+                                <div class="text-right min-w-[95px]">
+                                    <span class="font-serif font-bold text-lg text-burgundy-800">${formatCOP(subtotal)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // Render quick add pills
+            quickPills.innerHTML = catalog.map(item => `
+                <button onclick="updateCart('${item.id}', 1)" class="text-xs px-3 py-1.5 rounded-full bg-cream-100 hover:bg-burgundy-700 hover:text-white text-stone-700 border border-gold-500/30 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-plus text-[10px] text-gold-600"></i>
+                    <span>${item.name} (${formatCOP(item.price)})</span>
+                </button>
+            `).join('');
+        }
+
+        // Portion Calculator Logic
+        function adjustGuests(delta) {
+            const input = document.getElementById('guest-count');
+            let val = parseInt(input.value || 10, 10) + delta;
+            if (val < 2) val = 2;
+            if (val > 500) val = 500;
+            input.value = val;
+            updatePortionCalculator();
+        }
+
+        function updatePortionCalculator() {
+            const guests = Math.max(2, parseInt(document.getElementById('guest-count').value || 12, 10));
+            document.getElementById('calc-guests-label').textContent = `${guests} personas`;
+
+            const minLibras = Math.max(1, Math.ceil(guests / 4));
+            const maxLibras = Math.max(2, Math.ceil(guests / 3));
+            const moldesNatilla = Math.max(1, Math.ceil(guests / 10));
+
+            document.getElementById('calc-libras').textContent = `${minLibras} a ${maxLibras} Libras`;
+            document.getElementById('calc-cenas').textContent = `${guests} Platos Completos`;
+            document.getElementById('calc-natilla').textContent = `${moldesNatilla} Molde${moldesNatilla > 1 ? 's' : ''}`;
+            document.getElementById('calc-pasabocas').textContent = `${guests} a ${guests * 2} Unidades`;
+        }
+
+        // Build Formatted Order Message for WhatsApp
+        function buildOrderMessage() {
+            const name = document.getElementById('cust-name').value.trim() || 'Cliente de Pimiento & Olivos';
+            const date = document.getElementById('cust-date').value;
+            const delivery = document.getElementById('cust-delivery').value;
+            const notes = document.getElementById('cust-notes').value.trim();
+
+            const entries = Object.entries(cart);
+            let message = `🎄 *SOLICITUD DE PEDIDO / COTIZACIÓN NAVIDEÑA 2026*\n`;
+            message += `🍽️ *Pimiento & Olivos Restaurante*\n\n`;
+            message += `👤 *Cliente:* ${name}\n`;
+            message += `📅 *Fecha Especial:* ${date}\n`;
+            message += `🛵 *Modalidad:* ${delivery}\n\n`;
+
+            if (entries.length === 0) {
+                message += `✨ Hola Pimiento & Olivos, vi su *Portafolio Navideño 2026* y deseo recibir asesoría para realizar mi pedido.\n`;
+            } else {
+                message += `📋 *DETALLE DEL PEDIDO:*\n`;
+                let total = 0;
+                entries.forEach(([id, qty]) => {
+                    const item = catalog.find(p => p.id === id);
+                    if (item) {
+                        const sub = item.price * qty;
+                        total += sub;
+                        message += `• *${qty} ${item.unit}${qty > 1 ? 's' : ''}* de ${item.name} (${formatCOP(sub)})\n`;
+                    }
+                });
+                message += `\n💰 *Valor Estimado Total:* ${formatCOP(total)}\n`;
+            }
+
+            if (notes) {
+                message += `\n📝 *Notas adicionales:* ${notes}\n`;
+            }
+
+            message += `\nQuedo atento(a) a la confirmación de disponibilidad y datos para reservar. ¡Muchas gracias!`;
+            return message;
+        }
+
+        function sendOrderWhatsApp(phone) {
+            const msg = buildOrderMessage();
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        function copyOrderText() {
+            const msg = buildOrderMessage();
+            copyToClipboard(msg, 'Resumen de tu pedido copiado al portapapeles');
+        }
+
+        function scrollToCotizador() {
+            document.getElementById('cotizador').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Shareable Portfolio Modal Functions
+        function generatePortfolioTextSummary() {
+            let text = `🎄✨ *PORTAFOLIO NAVIDEÑO 2026 - PIMIENTO & OLIVOS RESTAURANTE* ✨🎄\n`;
+            text += `_"Deliciosas recetas caseras, recién hechas, con el amor y la experiencia de nuestras manos artesanas."_\n\n`;
+            text += `🍽️ *CENAS Y CARNES ESPECIALES:*\n`;
+            catalog.filter(i => i.category === 'Cenas Servidas' || i.category === 'Especialidades y Carnes').forEach(item => {
+                text += `• *${item.name}:* ${item.pricePrefix}${formatCOP(item.price)} / ${item.unit}\n`;
+            });
+            text += `\n🥟 *TRADICIÓN NAVIDEÑA, NOVENAS Y PASABOCAS:*\n`;
+            catalog.filter(i => i.category === 'Tradición Navideña y Pasabocas').forEach(item => {
+                text += `• *${item.name}:* ${formatCOP(item.price)} / ${item.unit}\n`;
+            });
+            text += `\n🍮 *POSTRES:*\n`;
+            catalog.filter(i => i.category === 'Postres').forEach(item => {
+                text += `• *${item.name}:* ${formatCOP(item.price)} / ${item.unit}\n`;
+            });
+            text += `\n📲 *RESERVAS Y PEDIDOS ANTICIPADOS (Cantidades Limitadas):*\n`;
+            text += `📞 WhatsApp: 321 300 97 76  |  310 312 75 37`;
+            return text;
+        }
+
+        function openShareModal() {
+            document.getElementById('portfolio-share-text').value = generatePortfolioTextSummary();
+            const modal = document.getElementById('share-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeShareModal() {
+            const modal = document.getElementById('share-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function copyPortfolioCard() {
+            const text = document.getElementById('portfolio-share-text').value;
+            copyToClipboard(text, '¡Carta Navideña 2026 copiada! Ya puedes pegarla en WhatsApp');
+        }
+
+        // Price Customizer Modal Functions
+        function openPriceModal() {
+            const list = document.getElementById('price-editor-list');
+            list.innerHTML = catalog.map(item => `
+                <div class="flex items-center justify-between gap-3 bg-white p-3 rounded-xl border border-stone-200">
+                    <div>
+                        <p class="font-bold text-xs sm:text-sm text-burgundy-900">${item.name}</p>
+                        <span class="text-[11px] text-stone-500">Unidad: ${item.unit}</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-xs font-bold text-stone-500">$</span>
+                        <input type="number" step="500" data-price-id="${item.id}" value="${item.price}"
+                               class="w-28 px-2.5 py-1.5 rounded-lg border border-gold-500 text-right font-bold text-sm text-burgundy-800 focus:outline-none">
+                    </div>
+                </div>
+            `).join('');
+            const modal = document.getElementById('price-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closePriceModal() {
+            const modal = document.getElementById('price-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function applyPercentageIncrease(pct) {
+            catalog.forEach(item => {
+                const raw = item.basePrice * (1 + pct / 100);
+                item.price = Math.round(raw / 500) * 500;
+            });
+            openPriceModal();
+        }
+
+        function saveCustomPrices() {
+            document.querySelectorAll('[data-price-id]').forEach(input => {
+                const id = input.getAttribute('data-price-id');
+                const val = parseInt(input.value, 10);
+                const item = catalog.find(p => p.id === id);
+                if (item && !isNaN(val) && val > 0) {
+                    item.price = val;
+                }
+            });
+            renderCatalog();
+            renderCart();
+            closePriceModal();
+            showToast('Precios 2026 actualizados en todo el portafolio');
+        }
+
+        // Reliable Clipboard Copy Helper
+        function copyToClipboard(text, successMsg) {
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            document.body.appendChild(temp);
+            temp.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMsg);
+            } catch (err) {
+                showToast('No se pudo copiar automáticamente');
+            }
+            document.body.removeChild(temp);
+        }
+
+        // Initialize on Window Load
+        window.onload = function () {
+            // Pre-populate with a welcoming default sample or start clean
+            renderCatalog();
+            renderCart();
+            updatePortionCalculator();
+        };
+    </script>
+</body>
+</html>
